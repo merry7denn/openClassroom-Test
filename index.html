@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style\style.css">
+    <link rel="stylesheet" href="style\index.css">
+</head>
+<body>
+    <header>
+        <img class="header__heading" src="images\logo.png" alt="logo Robbie Lens">
+        <nav class="header__nav">
+            <ul>
+                <li class="nav__link nav__link--active">Acceuil</li>
+                <li class="nav__link"><a href="a-propos.html">À propos</a></li>
+                <li class="nav__link"><a href="tarifs.html">Tarifs</a></li>
+                <li class="nav__link"><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main__presentation">
+            <div class="presentation__bio">
+                <h1 class="bio__title">Robbie Lens Photographie</h1>
+                <p class="bio__content">Où <em>professionnalisme</em> s'allie avec <em>passion</em>. Depuis plus de 5 ans maintenant, j'exerce mon métier avec la passion qui m'anime: capturer l'essence de chaque instant.</p>
+                <a class="bio__button button" href="#clientA">UN PROJET? ÉCRIVEZ-MOI</a>
+            </div>
+            <img class="presentation__photo" src="images\robbie-lens.png" alt="Photo de Robbie Lens">
+        </section>
+        <section class="main__photoAcceuil">
+            <h2 class="photoAcceuil__title">Mon dernier projet</h2>
+            <div class="photoAcceuil__photos">
+                <img src="images\accueil\element-1.png" alt="Plage rocheuse">
+                <img src="images\accueil\element-2.png" alt="Source volcanique">
+                <img src="images\accueil\element-3.png" alt="Lagon de sable">
+                <img src="images\accueil\element-4.png" alt="Couple sur un ponton">
+                <img src="images\accueil\element-5.png" alt="Reflets de montagnes sur un lac">
+                <img src="images\accueil\element-6.png" alt="Île immérger">
+            </div>
+            <a class="photoAcceuil__button button" href="portfolio.html">VOIR MON PORTFOLIO</a>
+        </section>
+        <section class="main__client" id="clientA">
+            <h2 class="client__title">Parlons de votre projet</h2>
+            <form class="client__form" action="" method="get">
+                <div class="client__form__nameEmail">
+                    <label for="name">nom</label><input type="text" required name="name" id="name">
+                    <label for="email">email</label><input type="email" required name="email" id="email">
+                </div>
+                <div class="client__form__message"><label for="message">message</label><textarea name="message" id="message" required></textarea></div>
+                <input type="submit" value="ENVOYER">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img class="footer__heading" src="images\logo.png" alt="logo Robbie Lens">
+        <nav class="footer__nav">
+            <ul>
+                <li class="nav__logo"><a href="https://twitter.com" target="_blank"><img src="images\twitter.png" alt="Logo twitter"></a></li>
+                <li class="nav__logo"><a href="https://instagram.com" target="_blank"><img src="images\instagram.png" alt="Logo instagram"></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
