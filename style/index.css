@@ -2,13 +2,14 @@
 
 /*Presentatation block*/
 .main__presentation {
-    background: #1F2039;
+    background-color: #1F2039;
     color: white;
     padding-top: 4em ;
     padding-bottom: 4em ;
 }
 
 .presentation__bioPhoto {
+    position: relative;
     width: 50%;
     margin: auto;
     display: flex;
@@ -24,10 +25,14 @@
     gap: 2em;
 }
 
-.bioPhoto__photo {
+.bioPhoto__border {
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    right: -2em;
+    bottom: -2em;
     border-bottom: #A5B4FC 1px solid;
     border-right: #A5B4FC 1px solid;
-    padding: 2em;
 }
 
 /*Photo block*/
@@ -91,6 +96,10 @@
 .client__form__nameEmail input, .client__form__message textarea {
     border-radius: .2em;
     border: none;
+}
+
+.client__form__nameEmail input:focus, .client__form__message textarea:focus {
+   background-color: #A5B4FC;
 }
 
 .client__form__button {

@@ -1,1 +1,45 @@
 @import "style.css";
+
+/*title*/
+.main__title {
+    background-color: #1F2039;
+}
+.main__title h1 {
+    width: 75%;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/*photos*/
+.main__photo {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 5em;
+    border-bottom: #A5B4FC 1px solid;
+}
+
+.main__photo h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.main__photo div {
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 1em;
+}
+.photo__paysage {
+    grid-template-rows: 450px 450px 450px;
+}
+
+.photo__portrait{
+    grid-template-rows: 1fr 1fr;
+}
+
+.main__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5em;
+}

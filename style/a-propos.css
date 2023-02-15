@@ -1,1 +1,61 @@
 @import "style.css";
+
+main {
+    background-color: #1F2039;
+}
+
+/*photo block*/
+.main__photos {
+    padding-top: 5em;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    box-shadow: 5em 5em 0 -3em #2C2E51;
+}
+.main__photos img {
+    width: 100%;
+    border-radius: 0.2em;
+}
+
+/*"A propos" text block*/
+.main__a-propos {
+    padding-top: 3em;
+    padding-bottom: 6em;
+    width: 50%;
+    margin: auto;
+    color: white;
+}
+
+.a-propos__text {
+    margin: auto;
+    margin-top :2em;
+    margin-bottom :5em;
+    padding: 5em;
+    padding-right: 15em;
+    position: relative;
+}
+
+.text__title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.text__border {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    border-right:#A5B4FC 1px solid;
+    border-bottom:#A5B4FC 1px solid;
+    right: 11em;
+    bottom: 2em;
+
+}
+
+.a-propos__button {
+    position: relative;
+    left: 30%;
+    right: auto;
+}
+    
