@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <title>Robbie-Lens Photographie</title>
-    <link rel="stylesheet" href="style\style.css">
     <link rel="stylesheet" href="style\index.css">
 </head>
 <body>
@@ -19,12 +18,14 @@
     </header>
     <main>
         <section class="main__presentation">
-            <div class="presentation__bio">
-                <h1 class="bio__title">Robbie Lens Photographie</h1>
-                <p class="bio__content">Où <em>professionnalisme</em> s'allie avec <em>passion</em>. Depuis plus de 5 ans maintenant, j'exerce mon métier avec la passion qui m'anime: capturer l'essence de chaque instant.</p>
-                <a class="bio__button button" href="#clientA">UN PROJET? ÉCRIVEZ-MOI</a>
+            <div class="presentation__bioPhoto">
+                <div class="bioPhoto__bio">
+                    <h1 class="bio__title">Robbie Lens Photographie</h1>
+                    <p class="bio__content">Où <em>professionnalisme</em> s'allie avec <em>passion</em>. Depuis plus de 5 ans maintenant, j'exerce mon métier avec la passion qui m'anime: capturer l'essence de chaque instant.</p>
+                    <a class="bio__button button" href="#clientA">UN PROJET? ÉCRIVEZ-MOI</a>
+                </div>
+                <img class="bioPhoto__photo" src="images\robbie-lens.png" alt="Photo de Robbie Lens">
             </div>
-            <img class="presentation__photo" src="images\robbie-lens.png" alt="Photo de Robbie Lens">
         </section>
         <section class="main__photoAcceuil">
             <h2 class="photoAcceuil__title">Mon dernier projet</h2>
@@ -42,11 +43,13 @@
             <h2 class="client__title">Parlons de votre projet</h2>
             <form class="client__form" action="" method="get">
                 <div class="client__form__nameEmail">
-                    <label for="name">nom</label><input type="text" required name="name" id="name">
-                    <label for="email">email</label><input type="email" required name="email" id="email">
+                    <label for="name">nom</label>
+                    <label for="email">email</label>
+                    <input type="text" required name="name" id="name">
+                    <input type="email" required name="email" id="email">
                 </div>
-                <div class="client__form__message"><label for="message">message</label><textarea name="message" id="message" required></textarea></div>
-                <input type="submit" value="ENVOYER">
+                <div class="client__form__message"><label for="message">message</label><textarea name="message" id="message" required rows="10"></textarea></div>
+                <input class="client__form__button button" type="submit" value="ENVOYER">
             </form>
         </section>
     </main>
