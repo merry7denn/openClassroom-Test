@@ -57,3 +57,39 @@ main {
 }
 
     
+@media screen and (max-width: 996px){
+
+.main__photos {
+    display: none;
+}
+    
+.main__a-propos {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 80%;
+}
+
+.a-propos__title {
+text-align: center;
+}
+
+.a-propos__text {
+    margin: auto;
+    margin-top :2em;
+    margin-bottom :0;
+    padding: 2em;
+}
+
+.text__title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.text__border {
+    display: none;
+
+}
+.a-propos__button{
+    display: none;
+}
+}

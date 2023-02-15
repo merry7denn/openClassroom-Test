@@ -12,7 +12,8 @@
                 <li class="nav__link nav__link--active">Acceuil</li>
                 <li class="nav__link"><a href="a-propos.html">À propos</a></li>
                 <li class="nav__link"><a href="tarifs.html">Tarifs</a></li>
-                <li class="nav__link"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav__link link__portfolio"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav__link link__contact"><a href="index.html#clientA">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -20,7 +21,7 @@
         <section class="main__presentation">
             <div class="presentation__bioPhoto">
                 <div class="bioPhoto__bio">
-                    <h1 class="bio__title">Robbie Lens Photographie</h1>
+                    <div class="bio__title"><span><h1>Robbie Lens</h1></span><h1>Photographie</h1></div>
                     <p class="bio__content">Où <em>professionnalisme</em> s'allie avec <em>passion</em>. Depuis plus de 5 ans maintenant, j'exerce mon métier avec la passion qui m'anime: capturer l'essence de chaque instant.</p>
                     <a class="bio__button button" href="#clientA">UN PROJET? ÉCRIVEZ-MOI</a>
                 </div>
@@ -45,10 +46,10 @@
             <h2 class="client__title">Parlons de votre projet</h2>
             <form class="client__form" action="" method="get">
                 <div class="client__form__nameEmail">
-                    <label for="name">nom</label>
-                    <label for="email">email</label>
-                    <input type="text" required name="name" id="name">
-                    <input type="email" required name="email" id="email">
+                    <label for="name" class="label__name">nom</label>
+                    <label for="email" class="label__email">email</label>
+                    <input type="text" required name="name" id="name" class="input__name">
+                    <input type="email" required name="email" id="email" class="input__email">
                 </div>
                 <div class="client__form__message"><label for="message">message</label><textarea name="message" id="message" required rows="10"></textarea></div>
                 <input class="client__form__button button" type="submit" value="ENVOYER">

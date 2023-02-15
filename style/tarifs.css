@@ -42,6 +42,9 @@ main {
     gap: 2em;
 
 }
+.notes {
+    font-size: 0.8em;
+}
 
 /*tarifs sudio*/
 .tarifs__studio h2 {
@@ -66,4 +69,55 @@ main {
 }
 .studio__table td {
     padding: 3em;
+}
+
+@media screen and (max-width:996px) {
+
+    main {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    
+    /*tarifs normaux*/
+    
+    .main__tarifs {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .tarifs__head {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .head__contact_button {
+        display: none;
+    }
+    
+    .tarifs__1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+    
+    
+    .tarifs__1 div {
+        padding: 1em;
+    
+    }
+    
+    /*tarifs sudio*/
+    .tarifs__studio h2 {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+    
+    .studio__table {
+        width: 100%;
+    }
+    .studio__table td {
+        padding: 0.5em;
+    }
+    
 }

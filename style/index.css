@@ -9,7 +9,6 @@
 }
 
 .presentation__bioPhoto {
-    position: relative;
     width: 50%;
     margin: auto;
     display: flex;
@@ -101,4 +100,76 @@
 .client__form__button {
     padding-left: 3em;
     padding-right: 3em;
+}
+
+@media screen and (max-width:996px) {
+
+.main__presentation{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.presentation__bioPhoto {
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    align-self: flex-start;
+}
+
+.bio__title span {
+    display: none;
+}
+
+.bio__title {
+    width: 80%;
+    align-self: flex-start;
+}
+
+/*Photos*/
+.main__photoAcceuil {
+    width: 80%;
+    margin: auto;
+    padding-top: 2em ;
+    padding-bottom: 2em ;
+}
+
+.photoAcceuil__photos {
+    grid-template-columns: 1fr;
+}
+
+.photoAcceuil__button {
+    display: none;
+}
+
+/*form*/
+.main__client {
+    padding-top: 2em ;
+    padding-bottom: 2em ;
+}
+
+.client__form__nameEmail {
+    width: 80%;
+    grid-template-columns: 1fr;
+}
+    .label__name {
+     grid-row: 1;
+    }
+
+    .input__name {
+    grid-row: 2;
+    }
+
+    .label__email {
+        grid-row: 3;
+    }
+
+    .input__email {
+    grid-row: 4;
+    }
+.client__form__message {
+    width: 80%;
+}
 }
