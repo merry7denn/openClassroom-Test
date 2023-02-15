@@ -21,11 +21,15 @@ main {
 
 /*"A propos" text block*/
 .main__a-propos {
-    padding-top: 3em;
+    padding-top: 4em;
     padding-bottom: 6em;
     width: 50%;
     margin: auto;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .a-propos__text {
@@ -33,7 +37,6 @@ main {
     margin-top :2em;
     margin-bottom :5em;
     padding: 5em;
-    padding-right: 15em;
     position: relative;
 }
 
@@ -48,14 +51,9 @@ main {
     height: 80%;
     border-right:#A5B4FC 1px solid;
     border-bottom:#A5B4FC 1px solid;
-    right: 11em;
-    bottom: 2em;
+    right: 0;
+    bottom: 0;
 
 }
 
-.a-propos__button {
-    position: relative;
-    left: 30%;
-    right: auto;
-}
     

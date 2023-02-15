@@ -13,28 +13,24 @@
     width: 50%;
     margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10em;
+    gap: 10%;
 }
 
 .bioPhoto__bio {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 2em;
 }
 
-.bioPhoto__border {
-    position: absolute;
-    height: 4em;
-    width: 4em;
-    right: -2em;
-    bottom: -2em;
+.bioPhoto__photo {
+    padding: 1em;
     border-bottom: #A5B4FC 1px solid;
     border-right: #A5B4FC 1px solid;
 }
-
 /*Photo block*/
 .main__photoAcceuil {
     background: white;

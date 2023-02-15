@@ -20,12 +20,20 @@ header, footer {
     color: black;
 }
 
+.header__nav {
+    width: 40%;
+}
+
+.footer__nav {
+    width: 10%;
+}
+
 .header__nav ul, .footer__nav ul {
-    display: flex;
     list-style: none;
+    white-space: nowrap;
+    display: flex;
     flex-direction: row;
-    justify-content: end;
-    gap: 10em; 
+    justify-content: space-between;
 }
 
 .header__nav a:hover {

@@ -16,15 +16,15 @@ main {
 
 .tarifs__head {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     margin-bottom: 5em;
 }
 
 .tarifs__1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10em;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;   
     margin-bottom: 5em;
 }
 
@@ -65,5 +65,5 @@ main {
     padding: 0.5em;
 }
 .studio__table td {
-    padding: 5em;
+    padding: 3em;
 }
