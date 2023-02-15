@@ -1,3 +1,3 @@
-#Base de code pour le cours HTML CSS
+# Base de code pour le cours HTML CSS
 
-Modifier légèrement.
+Modifier légèrement par mes soin en guise d'exercice.
