@@ -6,6 +6,7 @@
     font-size: 1rem;
     text-decoration: none;
     margin: 0;
+    padding: 0;
 }
 
 header, footer {
@@ -17,11 +18,14 @@ header, footer {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    color: black;
 }
 
 .header__nav {
     width: 40%;
+}
+
+.header__nav a {
+    color:  black;
 }
 
 .header__nav .link__contact {
@@ -72,8 +76,6 @@ em {
 @media screen and (max-width:996px) {
 
 * {
-    margin: 0;
-    padding: 0;
     font-size: 1.1rem;
 }
 header, footer {
