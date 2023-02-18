@@ -1,0 +1,61 @@
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    &__bio{
+        width: 30%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 3rem;
+    }
+    &__photo{
+        width: 30%;
+        margin: auto;
+        border-bottom: $color-secondary 1px solid;
+        border-right: $color-secondary 1px solid;
+        padding: 3rem;
+    }
+}
+.photoAcceuil{
+    background: $background-secondary;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 5rem;
+    &__photos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        img{
+            border-radius: 2rem;
+        }
+
+    }
+    &__button{
+        @include modifier($btn-modifier,$background-secondary);
+    }
+}
+.client{
+    h2{
+        text-align: center;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        margin-top: 5rem;
+        &__nameEmail{   
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+        }
+        button{
+            align-self: center;
+            width:max-content;
+        }
+    }
+
+}

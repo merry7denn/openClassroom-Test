@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: $font-familly-body;
+    font-size: $font-size-body;
+    color: $color-txt;
+}
+h1{
+    font-family: $font-familly-h1;
+    font-size: $font-size-h1;
+    color: $color-h1;
+}
+h2{
+    font-size: $font-size-h2;
+}
+em {
+    color: $color-secondary;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+//header
+.nav__link{
+    font-size: $font-size-nav;
+    color: $color-nav;
+    list-style:none;
+    & a{
+        @include modifier($nav-modifier);
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ex-sitephoto",
+  "version": "1.0.0",
+  "description": "Modifié légèrement par mes soins en guise d'exercice.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test display\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss ./public/css/style.css --style expanded" ,
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merry7denn/openClassroom-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merry7denn/openClassroom-Test/issues"
+  },
+  "homepage": "https://github.com/merry7denn/openClassroom-Test#readme",
+  "browserslist":"last 4 versions"
+
+}

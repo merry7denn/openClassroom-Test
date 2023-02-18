@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background: #1F2039;
+  padding-inline: 10rem;
+  padding-block: 10rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 2.2rem;
+  color: white;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7rem;
+  color: #A5B4FC;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+em {
+  color: #A5B4FC;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__link {
+  font-size: 1.8rem;
+  color: black;
+  list-style: none;
+}
+.nav__link a:active {
+  text-decoration: underline;
+  color: #259738;
+  box-shadow: #cccccc;
+}
+.nav__link a:hover {
+  text-decoration: underline;
+  box-shadow: #cccccc;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  background: linear-gradient(#8E86B5, #ACAEED);
+  border: none;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+button:hover {
+  box-shadow: 3rem 3rem #43457b;
+}
+
+header, footer {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5rem;
+  padding-block: 3rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 10rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 2.2rem;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+}
+.presentation__bio {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 3rem;
+}
+.presentation__photo {
+  width: 30%;
+  margin: auto;
+  border-bottom: #A5B4FC 1px solid;
+  border-right: #A5B4FC 1px solid;
+  padding: 3rem;
+}
+
+.photoAcceuil {
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 5rem;
+}
+.photoAcceuil__photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.photoAcceuil__photos img {
+  border-radius: 2rem;
+}
+.photoAcceuil__button:hover {
+  box-shadow: 3rem 3rem #cccccc;
+}
+
+.client h2 {
+  text-align: center;
+}
+.client__form {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+.client__form__nameEmail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+.client__form button {
+  align-self: center;
+  width: max-content;
+}
+
+/*# sourceMappingURL=style.css.map */

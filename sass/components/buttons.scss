@@ -1,0 +1,11 @@
+button {
+    font-family:$font-familly-button;
+    color:$color-button;
+    font-size:$font-size-button;
+    cursor:pointer;
+    background:$background-button;
+    border:$border-button;
+    padding:$padding-button;
+    border-radius:$border-radius-button;
+    @include modifier($btn-modifier,$background-primary);
+}

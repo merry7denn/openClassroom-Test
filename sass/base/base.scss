@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    background: $background-primary;
+    padding-inline: $padding-inline-section;
+    padding-block: $padding-block-section;
+}

@@ -1,0 +1,8 @@
+@function lightness-checker($color){
+    @if (lightness($color)<25%){
+        @return adjust-color($color, $lightness:20%);
+    }
+    @else{
+        @return adjust-color($color, $lightness:-20%)
+    }
+};

@@ -1,0 +1,58 @@
+//color
+$color-primary:#1F2039;
+$color-secondary:#A5B4FC;
+$color-white:white;
+//color txt
+$color-txt:$color-white;
+$color-h1:$color-secondary;
+$color-nav:black;
+$color-nav-active:#259738;
+$color-button:$color-white;
+//font familly
+$font-familly-body:"Manrope", sans-serif;
+$font-familly-button:"Montserrat",sans-serif;
+$font-familly-h1:"Montserrat", sans-serif;
+//text font-size
+$font-size-body:2.2rem;
+$font-size-h1:7rem;
+$font-size-h2:3rem;
+$font-size-form:2.2rem;
+$font-size-nav:1.8rem;
+$font-size-button:2rem;
+$font-size-input:2rem;
+//header footer
+$padding-inline-headfoot:5rem;
+$padding-block-headfoot:3rem;
+$background-headfoot:$color-white;
+//nav
+$gap-nav:10rem;
+//section
+$padding-inline-section:10rem;
+$padding-block-section:10rem;
+$background-primary:$color-primary;
+$background-secondary:$color-white;
+//button
+$background-button:linear-gradient(#8E86B5, #ACAEED);
+$border-button:none;
+$border-radius-button:3rem;
+$padding-button:1rem;
+//forms input
+$width-form:100%;
+$padding-form:1rem;
+$border-form:none;
+$border-radius-form:1rem;
+//maps
+$nav-modifier:(
+    active:(
+        color:$color-nav-active,
+        text-decoration:underline,
+    ),
+    hover:(
+        text-decoration:underline,
+    ),
+);
+$btn-modifier:(
+    hover:(
+        box-shadow:3rem 3rem,
+    ),
+);

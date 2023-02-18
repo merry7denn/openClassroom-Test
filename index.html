@@ -2,66 +2,68 @@
 <html lang="fr">
 <head>
     <title>Robbie-Lens Photographie</title>
-    <link rel="stylesheet" href="style\index.css">
+    <link rel="stylesheet" href="public\css\style.css">
 </head>
 <body>
     <header>
-        <img class="header__heading" src="images\logo.png" alt="logo Robbie Lens">
+        <div class="header__heading"><img src="public\images\logo.png" alt="logo Robbie Lens"></div>
         <nav class="header__nav">
             <ul>
                 <li class="nav__link nav__link--active">Acceuil</li>
                 <li class="nav__link"><a href="a-propos.html">À propos</a></li>
                 <li class="nav__link"><a href="tarifs.html">Tarifs</a></li>
-                <li class="nav__link link__portfolio"><a href="portfolio.html">Portfolio</a></li>
-                <li class="nav__link link__contact"><a href="index.html#clientA">Contact</a></li>
+                <li class="nav__link"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav__link"><a href="index.html#client-form">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="main__presentation">
-            <div class="presentation__bioPhoto">
-                <div class="bioPhoto__bio">
-                    <div class="bio__title"><span><h1>Robbie Lens</h1></span><h1>Photographie</h1></div>
-                    <p class="bio__content">Où <em>professionnalisme</em> s'allie avec <em>passion</em>. Depuis plus de 5 ans maintenant, j'exerce mon métier avec la passion qui m'anime: capturer l'essence de chaque instant.</p>
-                    <a class="bio__button button" href="#clientA">UN PROJET? ÉCRIVEZ-MOI</a>
-                </div>
-                <div class="bioPhoto__photo">
-                    <img src="images\robbie-lens.png" alt="Photo de Robbie Lens">
-                </div>
+        <section class="presentation">
+            <div class="presentation__bio">
+                <h1>Robbie Lens Photographie</h1>
+                <p class="bio__content">Où <em>professionnalisme</em> s'allie avec <em>passion</em>. Depuis plus de 5 ans maintenant, j'exerce mon métier avec la passion qui m'anime: capturer l'essence de chaque instant.</p>
+                <button class="bio__button"><a href="#client-form">UN PROJET? ÉCRIVEZ-MOI</a></button>
+            </div>
+            <div class="presentation__photo">
+                <img src="public\images\robbie-lens.png" alt="Photo de Robbie Lens">
             </div>
         </section>
-        <section class="main__photoAcceuil">
+        <section class="photoAcceuil">
             <h2 class="photoAcceuil__title">Mon dernier projet</h2>
             <div class="photoAcceuil__photos">
-                <img src="images\accueil\element-1.png" alt="Plage rocheuse">
-                <img src="images\accueil\element-2.png" alt="Source volcanique">
-                <img src="images\accueil\element-3.png" alt="Lagon de sable">
-                <img src="images\accueil\element-4.png" alt="Couple sur un ponton">
-                <img src="images\accueil\element-5.png" alt="Reflets de montagnes sur un lac">
-                <img src="images\accueil\element-6.png" alt="Île immérger">
+                <img src="public\images\accueil\element-1.png" alt="Plage rocheuse">
+                <img src="public\images\accueil\element-2.png" alt="Source volcanique">
+                <img src="public\images\accueil\element-3.png" alt="Lagon de sable">
+                <img src="public\images\accueil\element-4.png" alt="Couple sur un ponton">
+                <img src="public\images\accueil\element-5.png" alt="Reflets de montagnes sur un lac">
+                <img src="public\images\accueil\element-6.png" alt="Île immérger">
             </div>
-            <a class="photoAcceuil__button button" href="portfolio.html">VOIR MON PORTFOLIO</a>
+            <button class="photoAcceuil__button"><a href="portfolio.html">VOIR MON PORTFOLIO</a></button>
         </section>
-        <section class="main__client" id="clientA">
+        <section class="client" id="client-form">
             <h2 class="client__title">Parlons de votre projet</h2>
-            <form class="client__form" action="" method="get">
+            <form class="client__form" action="" method="get" id="message-querry">
                 <div class="client__form__nameEmail">
-                    <label for="name" class="label__name">nom</label>
-                    <label for="email" class="label__email">email</label>
-                    <input type="text" required name="name" id="name" class="input__name">
-                    <input type="email" required name="email" id="email" class="input__email">
+                    <div>
+                        <label for="name" class="label__name">nom</label>
+                        <input type="text" required name="name" id="name" class="input__name">
+                    </div>
+                    <div>
+                        <label for="email" class="label__email">email</label>
+                        <input type="email" required name="email" id="email" class="input__email">
+                    </div>
                 </div>
                 <div class="client__form__message"><label for="message">message</label><textarea name="message" id="message" required rows="10"></textarea></div>
-                <input class="client__form__button button" type="submit" value="ENVOYER">
+                <button class="client__form__button" type="submit" >ENVOYER</button>
             </form>
         </section>
     </main>
     <footer>
-        <img class="footer__heading" src="images\logo.png" alt="logo Robbie Lens">
+        <img class="footer__heading" src="public\images\logo.png" alt="logo Robbie Lens">
         <nav class="footer__nav">
             <ul>
-                <li class="nav__logo"><a href="https://twitter.com" target="_blank"><img src="images\twitter.png" alt="Logo twitter"></a></li>
-                <li class="nav__logo"><a href="https://instagram.com" target="_blank"><img src="images\instagram.png" alt="Logo instagram"></a></li>
+                <li class="nav__logo"><a href="https://twitter.com" target="_blank"><img src="public\images\twitter.png" alt="Logo twitter"></a></li>
+                <li class="nav__logo"><a href="https://instagram.com" target="_blank"><img src="public\images\instagram.png" alt="Logo instagram"></a></li>
             </ul>
         </nav>
     </footer>
