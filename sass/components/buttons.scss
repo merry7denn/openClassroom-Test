@@ -1,11 +1,13 @@
 button {
+    width:max-content;
+    height: max-content;
     font-family:$font-familly-button;
-    color:$color-button;
+    color:map-get($color-map, color-button);
     font-size:$font-size-button;
     cursor:pointer;
-    background:$background-button;
-    border:$border-button;
-    padding:$padding-button;
-    border-radius:$border-radius-button;
-    @include modifier($btn-modifier,$background-primary);
+    background:linear-gradient(map-get($color-map, color-secondary), lighten(map-get($color-map, color-secondary),10%));
+    border:none;
+    padding:1rem;
+    border-radius:3rem;
+    @include modifier($btn-modifier,$color-primary);
 }

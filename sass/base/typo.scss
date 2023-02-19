@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap');
 
-html{
-    font-size: 62.5%;
-}
 body {
     font-family: $font-familly-body;
     font-size: $font-size-body;
-    color: $color-txt;
+    color: map-get($color-map, color-white);
 }
 h1{
     font-family: $font-familly-h1;
     font-size: $font-size-h1;
-    color: $color-h1;
+    color: map-get($color-map, color-secondary);
 }
 h2{
     font-size: $font-size-h2;
+    color:light-check($color-primary,40%);
 }
 em {
-    color: $color-secondary;
+    color: map-get($color-map, color-secondary);
     font-style: normal;
 }
 a{
@@ -27,7 +25,7 @@ a{
 //header
 .nav__link{
     font-size: $font-size-nav;
-    color: $color-nav;
+    color: map-get($color-map, color-nav);;
     list-style:none;
     & a{
         @include modifier($nav-modifier);

@@ -1,13 +1,7 @@
+//color #1F2039
+$color-primary:#1F2039 ;
 //color
-$color-primary:#1F2039;
-$color-secondary:#A5B4FC;
-$color-white:white;
-//color txt
-$color-txt:$color-white;
-$color-h1:$color-secondary;
-$color-nav:black;
-$color-nav-active:#259738;
-$color-button:$color-white;
+$color-map: color-palette($color-primary);
 //font familly
 $font-familly-body:"Manrope", sans-serif;
 $font-familly-button:"Montserrat",sans-serif;
@@ -20,31 +14,17 @@ $font-size-form:2.2rem;
 $font-size-nav:1.8rem;
 $font-size-button:2rem;
 $font-size-input:2rem;
-//header footer
-$padding-inline-headfoot:5rem;
-$padding-block-headfoot:3rem;
-$background-headfoot:$color-white;
 //nav
 $gap-nav:10rem;
 //section
 $padding-inline-section:10rem;
 $padding-block-section:10rem;
-$background-primary:$color-primary;
-$background-secondary:$color-white;
-//button
-$background-button:linear-gradient(#8E86B5, #ACAEED);
-$border-button:none;
-$border-radius-button:3rem;
-$padding-button:1rem;
-//forms input
-$width-form:100%;
-$padding-form:1rem;
-$border-form:none;
-$border-radius-form:1rem;
+//input
+$border-input:.6rem solid, light-check($color-primary,20%);
 //maps
 $nav-modifier:(
     active:(
-        color:$color-nav-active,
+        color:$color-primary,
         text-decoration:underline,
     ),
     hover:(
@@ -54,5 +34,14 @@ $nav-modifier:(
 $btn-modifier:(
     hover:(
         box-shadow:3rem 3rem,
+    ),
+);
+$form-modifier:(
+    focus:(
+        outline:none,
+        border:nth($border-input, 1) light-check($color-primary,50%),
+    ),
+    invalid:(
+        background-color: pink,
     ),
 );

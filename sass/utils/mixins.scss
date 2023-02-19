@@ -3,7 +3,11 @@
         &:#{$state}{
             text-decoration: map-get($pseudo-class, text-decoration);
             color:map-get($pseudo-class,color);
-            box-shadow: map-get($pseudo-class,box-shadow) lightness-checker($bg-color);
+            box-shadow: map-get($pseudo-class,box-shadow)light-check($bg-color,5%);
+            border: map-get($pseudo-class,border);
+            background-color: map-get($pseudo-class,background-color);
+            outline:map-get($pseudo-class,outline);
+            @content
         }
     }
 };

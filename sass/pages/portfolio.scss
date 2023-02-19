@@ -1,0 +1,42 @@
+.portfolio-title{
+    position: relative;
+    z-index: 1;
+    text-shadow: 30rem 0rem light-check($color-primary,5%),
+                 60rem 0rem light-check($color-primary,10%),
+                 90rem 0rem light-check($color-primary,20%),
+                 120rem 0rem light-check($color-primary,30%);
+    border-bottom: 2px solid light-check($color-primary,25%);
+    box-shadow: 0rem 2rem 10rem -3rem $color-primary;
+    h1{
+        width: fit-content;
+        padding: 2rem;
+        border-radius: 3rem;
+        border-top: 3px solid map-get($color-map, color-white);
+        border-bottom: 3px solid map-get($color-map, color-white);
+        border-left: 3px solid map-get($color-map, color-white);
+    }
+}
+.portfolio-photo{
+    background-color: map-get($color-map, color-white);
+    padding-bottom: 0;
+    box-shadow: inset -0rem -5rem 10rem -7rem $color-primary;  
+    h2{ 
+        color: light-check(map-get($color-map,color-white),40%);
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    
+    &__paysage, &__portrait{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 35rem 35rem 35rem;
+        gap: 2rem;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+             
+    }
+}

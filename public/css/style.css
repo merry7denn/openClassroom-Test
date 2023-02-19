@@ -5,34 +5,35 @@
   box-sizing: border-box;
 }
 
-section {
+html {
+  font-size: 62.75%;
   background: #1F2039;
-  padding-inline: 10rem;
-  padding-block: 10rem;
 }
 
-html {
-  font-size: 62.5%;
+section {
+  padding-inline: 10rem;
+  padding-block: 10rem;
 }
 
 body {
   font-family: "Manrope", sans-serif;
   font-size: 2.2rem;
-  color: white;
+  color: #9395c4;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 7rem;
-  color: #A5B4FC;
+  color: #55589c;
 }
 
 h2 {
   font-size: 3rem;
+  color: #7274b2;
 }
 
 em {
-  color: #A5B4FC;
+  color: #55589c;
   font-style: normal;
 }
 
@@ -48,35 +49,50 @@ a {
 }
 .nav__link a:active {
   text-decoration: underline;
-  color: #259738;
-  box-shadow: #cccccc;
+  color: #1F2039;
+  box-shadow: #f2f2f2;
 }
 .nav__link a:hover {
   text-decoration: underline;
-  box-shadow: #cccccc;
+  box-shadow: #f2f2f2;
 }
 
 button {
+  width: max-content;
+  height: max-content;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 2rem;
   cursor: pointer;
-  background: linear-gradient(#8E86B5, #ACAEED);
+  background: linear-gradient(#55589c, #7274b2);
   border: none;
   padding: 1rem;
   border-radius: 3rem;
 }
 button:hover {
-  box-shadow: 3rem 3rem #43457b;
+  box-shadow: 3rem 3rem #28294a;
+}
+
+.shadow {
+  position: absolute;
+  width: 70rem;
+  height: 50rem;
+  background-color: #43457b;
+  border-bottom-right-radius: 15rem 20rem;
+  border-top-left-radius: 20rem 15rem;
+  border-top-right-radius: 3rem;
+  border-right: 3px solid #9395c4;
 }
 
 header, footer {
-  background: white;
+  background: #9395c4;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 5rem;
   padding-block: 3rem;
+  position: relative;
+  z-index: 2;
 }
 
 nav ul {
@@ -85,11 +101,22 @@ nav ul {
 }
 
 input, textarea {
+  display: block;
   width: 100%;
   padding: 1rem;
-  border: none;
+  background-color: white;
+  border: 0.6rem solid #43457b;
   border-radius: 1rem;
   font-size: 2.2rem;
+}
+input:focus, textarea:focus {
+  box-shadow: #f2f2f2;
+  border: 0.6rem solid #9395c4;
+  outline: none;
+}
+input:invalid, textarea:invalid {
+  box-shadow: #f2f2f2;
+  background-color: pink;
 }
 
 .presentation {
@@ -105,21 +132,22 @@ input, textarea {
   gap: 3rem;
 }
 .presentation__photo {
-  width: 30%;
   margin: auto;
-  border-bottom: #A5B4FC 1px solid;
-  border-right: #A5B4FC 1px solid;
-  padding: 3rem;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  padding: inherit;
 }
 
 .photoAcceuil {
-  background: white;
-  color: black;
+  background: #9395c4;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   gap: 5rem;
+}
+.photoAcceuil h2 {
+  color: #31335a;
 }
 .photoAcceuil__photos {
   display: grid;
@@ -130,26 +158,139 @@ input, textarea {
   border-radius: 2rem;
 }
 .photoAcceuil__button:hover {
-  box-shadow: 3rem 3rem #cccccc;
+  box-shadow: 3rem 3rem #8285bb;
 }
 
-.client h2 {
-  text-align: center;
-}
-.client__form {
+.client {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5rem;
-  margin-top: 5rem;
+  position: relative;
+}
+.client__form {
+  display: grid;
+  gap: 2rem;
+  border-top-left-radius: 6rem 9rem;
+  border-bottom-right-radius: 6rem 9rem;
 }
 .client__form__nameEmail {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.client h2, .client form, .client button {
+  position: relative;
+  z-index: 5;
+}
+.client__button:hover {
+  box-shadow: 3rem 3rem #4c4e8c;
+}
+
+.shadow {
+  bottom: 8%;
+  right: 25%;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  position: fixed;
+}
+.photos img {
+  width: 100%;
+  opacity: 0.1;
+}
+
+.a-propos {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.a-propos__text {
+  width: 50%;
+  margin-block: 8rem;
+  margin-left: 8rem;
+  padding: 5rem;
+  border-bottom-right-radius: 15rem 20rem;
+  border-top-left-radius: 20rem 15rem;
+  border: 5rem solid #55589c;
+}
+.a-propos__button:hover {
+  box-shadow: 3rem 3rem #363864;
+}
+
+.tarifs__head {
+  display: flex;
+  justify-content: space-between;
+}
+.tarifs__1 {
+  display: flex;
+  gap: 3rem;
+}
+.tarifs__1 div {
+  border-right: 1px solid #9395c4;
+  border-bottom: 1px solid #9395c4;
+  padding: 3rem;
+}
+.tarifs__studio {
+  display: grid;
+  text-align: center;
+  padding-block: 5em;
+  width: 75%;
+  margin: auto;
+}
+.tarifs__studio table {
+  margin-top: 3rem;
+  border-collapse: collapse;
+}
+.tarifs__studio th, .tarifs__studio td {
+  border-collapse: collapse;
+  border: 1px solid #9395c4;
+  padding: 2rem;
+}
+
+.portfolio-title {
+  position: relative;
+  z-index: 1;
+  text-shadow: 30rem 0rem #28294a, 60rem 0rem #31335a, 90rem 0rem #43457b, 120rem 0rem #55589c;
+  border-bottom: 2px solid #4c4e8c;
+  box-shadow: 0rem 2rem 10rem -3rem #1F2039;
+}
+.portfolio-title h1 {
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 3rem;
+  border-top: 3px solid #9395c4;
+  border-bottom: 3px solid #9395c4;
+  border-left: 3px solid #9395c4;
+}
+
+.portfolio-photo {
+  background-color: #9395c4;
+  padding-bottom: 0;
+  box-shadow: inset 0rem -5rem 10rem -7rem #1F2039;
+  display: flex;
+  flex-direction: column;
   gap: 5rem;
 }
-.client__form button {
-  align-self: center;
-  width: max-content;
+.portfolio-photo h2 {
+  color: #31335a;
+}
+.portfolio-photo__paysage, .portfolio-photo__portrait {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 35rem 35rem 35rem;
+  gap: 2rem;
+}
+.portfolio-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

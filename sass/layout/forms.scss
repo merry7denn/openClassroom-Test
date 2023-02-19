@@ -1,7 +1,10 @@
 input, textarea {
-    width:$width-form;
-    padding:$padding-form;
-    border:$border-form;
-    border-radius:$border-radius-form;
+    display: block;
+    width:100%;
+    padding:1rem;
+    background-color: white;
+    border: nth($border-input,1)light-check($color-primary,20%);
+    border-radius:1rem;
     font-size: $font-size-form;
+    @include modifier($form-modifier);
 }

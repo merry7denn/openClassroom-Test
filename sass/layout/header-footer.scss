@@ -1,9 +1,11 @@
 header, footer{
-    background: $background-headfoot;
+    background: map-get($color-map, color-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: $padding-inline-headfoot;
-    padding-block: $padding-block-headfoot;
+    padding-inline: 5rem;
+    padding-block: 3rem;
+    position: relative;
+    z-index: 2;
 
 }

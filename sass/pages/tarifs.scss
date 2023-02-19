@@ -1,0 +1,31 @@
+.tarifs{
+    &__head{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__1{
+        display: flex;
+        gap: 3rem;
+        div{
+            border-right: 1px solid light-check($color-primary,50%);
+            border-bottom: 1px solid light-check($color-primary,50%);
+            padding: 3rem;
+        }
+    }
+    &__studio{
+        display: grid;
+        text-align: center;
+        padding-block: 5em;
+        width: 75%;
+        margin: auto;
+        table{
+            margin-top: 3rem;
+            border-collapse: collapse;
+        }
+        th,td{
+            border-collapse: collapse;
+            border: 1px solid light-check($color-primary,50%);
+            padding: 2rem;
+        }
+    }
+}

@@ -1,10 +1,14 @@
-@import "./utils/variables.scss";
 @import "./utils/functions.scss";
+@import "./utils/variables.scss";
 @import "./utils/mixins.scss";
 @import "./base/base.scss";
 @import "./base/typo.scss";
 @import "./components/buttons.scss";
+@import "./layout/shadow.scss";
 @import "./layout/header-footer.scss";
 @import "./layout/nav.scss";
 @import "./layout/forms.scss";
 @import "./pages/index.scss";
+@import "./pages/a-propos.scss";
+@import "./pages/tarifs.scss";
+@import "./pages/portfolio.scss";

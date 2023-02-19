@@ -1,0 +1,10 @@
+.shadow{
+    position: absolute;
+    width: 70rem;
+    height: 50rem;
+    background-color: light-check($color-primary,20%);
+    border-bottom-right-radius: 15rem 20rem;
+    border-top-left-radius: 20rem 15rem;
+    border-top-right-radius: 3rem;
+    border-right: 3px solid light-check($color-primary,50%);
+}

@@ -1,8 +1,33 @@
-@function lightness-checker($color){
-    @if (lightness($color)<25%){
-        @return adjust-color($color, $lightness:20%);
+@function color-palette($color){
+
+    @if (lightness($color)<50%){
+        $color-map:(
+            color-secondary:light-check($color,30%),
+            color-white:light-check($color,50%),
+            color-nav:black,
+            color-button: white,
+        );
+        @return $color-map;
     }
     @else{
-        @return adjust-color($color, $lightness:-20%)
+        $color-map:(
+            color-secondary:light-check($color,20%),
+            color-white:light-check($color,40%),
+            color-nav:white,
+            color-button: black,
+        );
+        @return $color-map;
     }
+
+};
+
+@function light-check($color,$deg:10%){
+
+    @if (lightness($color)<50%){
+        @return adjust-color($color,$lightness:$deg);
+    }
+    @else{
+        @return adjust-color($color,$lightness:-$deg);
+    }
+
 };
