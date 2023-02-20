@@ -1,3 +1,4 @@
+/*Base*/
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap");
 * {
   margin: 0;
@@ -15,6 +16,7 @@ section {
   padding-block: 10rem;
 }
 
+/*Typo*/
 body {
   font-family: "Manrope", sans-serif;
   font-size: 2.2rem;
@@ -57,6 +59,7 @@ a {
   box-shadow: #f2f2f2;
 }
 
+/*Button*/
 button {
   width: max-content;
   height: max-content;
@@ -73,6 +76,7 @@ button:hover {
   box-shadow: 3rem 3rem #28294a;
 }
 
+/*Decoration*/
 .shadow {
   position: absolute;
   width: 70rem;
@@ -84,6 +88,7 @@ button:hover {
   border-right: 3px solid #9395c4;
 }
 
+/*Header Footer*/
 header, footer {
   background: #9395c4;
   display: flex;
@@ -95,11 +100,13 @@ header, footer {
   z-index: 2;
 }
 
+/*Nav*/
 nav ul {
   display: flex;
   gap: 10rem;
 }
 
+/*Forms*/
 input, textarea {
   display: block;
   width: 100%;
@@ -119,6 +126,7 @@ input:invalid, textarea:invalid {
   background-color: pink;
 }
 
+/*Index*/
 .presentation {
   display: flex;
   justify-content: space-between;
@@ -192,6 +200,7 @@ input:invalid, textarea:invalid {
   right: 25%;
 }
 
+/*About*/
 .photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -224,6 +233,7 @@ input:invalid, textarea:invalid {
   box-shadow: 3rem 3rem #363864;
 }
 
+/*Tarifs*/
 .tarifs__head {
   display: flex;
   justify-content: space-between;
@@ -254,6 +264,7 @@ input:invalid, textarea:invalid {
   padding: 2rem;
 }
 
+/*Portfolio*/
 .portfolio-title {
   position: relative;
   z-index: 1;
@@ -277,11 +288,14 @@ input:invalid, textarea:invalid {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  position: relative;
 }
 .portfolio-photo h2 {
   color: #31335a;
+  position: relative;
 }
 .portfolio-photo__paysage, .portfolio-photo__portrait {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 35rem 35rem 35rem;
@@ -293,12 +307,40 @@ input:invalid, textarea:invalid {
   object-fit: cover;
   position: relative;
   z-index: 2;
+  cursor: default;
 }
 
+/*Portfolio photo hover*/
+.photo-hover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 35rem 35rem 35rem;
+  gap: 2rem;
+  z-index: 3;
+}
+.photo-hover .photo-h {
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-hover .photo-h:hover {
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*CSS light box*/
 #paysage1, #paysage2, #paysage3, #paysage4, #paysage5, #paysage6, #paysage7, #paysage8, #paysage9, #portrait1, #portrait2, #portrait3, #portrait4, #portrait5, #portrait6, #portrait7, #portrait8, #portrait9 {
   position: relative;
+  display: block;
 }
 #paysage1:target, #paysage2:target, #paysage3:target, #paysage4:target, #paysage5:target, #paysage6:target, #paysage7:target, #paysage8:target, #paysage9:target, #portrait1:target, #portrait2:target, #portrait3:target, #portrait4:target, #portrait5:target, #portrait6:target, #portrait7:target, #portrait8:target, #portrait9:target {
+  object-fit: cover;
   cursor: default;
   position: fixed;
   left: 0;
@@ -307,10 +349,9 @@ input:invalid, textarea:invalid {
   height: 100%;
   display: flex;
   justify-content: center;
-  z-index: 3;
+  z-index: 4;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 3rem;
-  cursor: default;
 }
 
 .close::after {
